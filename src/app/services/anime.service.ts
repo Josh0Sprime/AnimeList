@@ -16,4 +16,16 @@ export class AnimeService {
 
     return this.http.get<Anime>(url);
   }
+
+  obtenerVideos(){
+    const url = `${this.url}/anime/1/videos`;
+
+    return this.http.get(url);
+  }
+
+  obtenerPersonajes(){
+    const url = `${this.url}/anime/1/characters?limit=6`;
+
+    return this.http.get(url);
+  }
 }

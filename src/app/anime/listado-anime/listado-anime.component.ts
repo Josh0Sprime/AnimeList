@@ -9,13 +9,17 @@ import { AnimeService } from 'src/app/services/anime.service';
 })
 export class ListadoAnimeComponent implements OnInit {
 
-  noticias!: any;
+  noticias!: any[];
   opcionesResponsive!: any [];
+  videos!: any;
 
   constructor(private animeS: AnimeService){
     animeS.obtenerNoticas().subscribe((resp: any) => {
       this.noticias = resp.data;
-      console.log(this.noticias);
+    })
+    animeS.obtenerVideos().subscribe((resp: any) => {
+      this.videos = resp.data.promo
+      console.log(this.videos);
     })
     this.opcionesResponsive = [
       {
