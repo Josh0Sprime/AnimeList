@@ -1,0 +1,11 @@
+
+<div class="py-5 bg-orange-500">
+    <h1 class="text-center text-white font-semibold text-5xl mb-10">Novedades</h1>
+  <p-carousel [value]="noticias" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="opcionesResponsive">
+      <ng-template let-img pTemplate="noticias">
+        <div class="flex justify-center h-[100%]">
+          <img src="{{img.images.jpg.image_url}}" alt="">
+        </div>
+      </ng-template>
+  </p-carousel>
+</div>
