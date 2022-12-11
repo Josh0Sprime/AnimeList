@@ -1,6 +1,7 @@
 .card{
     position: relative;
     overflow: hidden;
+    transition: all 1s;
 }
 
 img{
@@ -13,7 +14,7 @@ img{
     background-color: orange;
     width: 50%;
     height: 100%;
-    top: 600px;
+    top: 700px;
     border-radius: 100%;
     left: 0;
     transition: all 1s;
@@ -27,7 +28,7 @@ img{
     width: 50%;
     height: 100%;
     border-radius: 100%;
-    top: 600px;
+    top: 700px;
     right: 0;
     transition: all 2s ;
     transform: scale(1.8);
