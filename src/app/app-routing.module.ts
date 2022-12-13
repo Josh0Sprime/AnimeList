@@ -19,7 +19,7 @@ const routes: Routes = [
     component: VerAnimeComponent
   },
   {
-    path: 'Personaje/:id',
+    path: 'Personajes/:id',
     component: PersonajeComponent
   },
   
