@@ -43,6 +43,5 @@ export class VerPersonajesComponent {
 
   verPersonaje(nombre: any){
     this.router.navigate(['/Personajes', nombre])
-    
   }
 }
