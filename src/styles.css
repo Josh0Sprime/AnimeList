@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button.p-ripple.p-element.p-carousel-prev.p-link{
+    background-color: white;
+}
+button.p-ripple.p-element.p-carousel-next.p-link{
+    background-color: white;
+}

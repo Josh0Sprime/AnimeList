@@ -1,0 +1,44 @@
+.card{
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+img{
+    position: relative;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    background-color: orange;
+    width: 50%;
+    height: 100%;
+    top: 700px;
+    border-radius: 100%;
+    left: 0;
+    transition: all 1s;
+    transform: scale(1.8);
+    z-index: -1;
+}
+.card::after{
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 50%;
+    height: 100%;
+    border-radius: 100%;
+    top: 700px;
+    right: 0;
+    transition: all 2s ;
+    transform: scale(1.8);
+    z-index: -1;
+}
+
+.card:hover::before{
+    top: 0;
+}
+
+.card:hover::after{
+    top: 0;
+}
