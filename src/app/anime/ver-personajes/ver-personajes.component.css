@@ -42,3 +42,24 @@ img{
 .card:hover::after{
     top: 0;
 }
+
+.cont-btn{
+    position: relative;
+    overflow: hidden;
+}
+
+.cont-btn::before{
+    position: absolute;
+    content: '';
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    right: 80%;
+    top: 0;
+    transform: rotate(45deg);
+    transition: all 0.8s;
+}
+
+.cont-btn:hover::before{
+    right: -100%;
+}

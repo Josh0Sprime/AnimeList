@@ -3,8 +3,25 @@
 @tailwind utilities;
 
 button.p-ripple.p-element.p-carousel-prev.p-link{
-    background-color: white;
+    background-color: #F97316;
 }
 button.p-ripple.p-element.p-carousel-next.p-link{
-    background-color: white;
+    background-color: #F97316;
+}
+
+.p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+    width: 2rem;
+    height: 2rem;
+    color: white !important;
+    border: 0 none;
+    background: transparent;
+    border-radius: 50%;
+    transition: none;
+    margin: 0.5rem;
+}
+
+.p-carousel .p-carousel-content .p-carousel-prev:enabled:hover, .p-carousel .p-carousel-content .p-carousel-next:enabled:hover {
+    color: #18181B;
+    border-color: transparent;
+    background: #F97316 !important;
 }
