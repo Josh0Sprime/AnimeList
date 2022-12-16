@@ -1,16 +1,17 @@
 
+
 <div class="py-5 bg-white rounded-lg">
     <h1 class="text-center text-black font-bold text-5xl mb-10">Novedades</h1>
   <p-carousel [autoplayInterval]="5000" [value]="noticias" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="opcionesResponsive">
       <ng-template let-img pTemplate="noticias">
-        <div class="flex justify-center h-[100%] w-[100%] relative">
+        <div class="flex justify-center h-[100%] w-[100%]">
           <img class="border-2 border-slate-500" src="{{img.images.jpg.image_url}}" alt="">
         </div>
       </ng-template>
   </p-carousel>
 </div>
 <div class="flex md:flex-row md:space-x-5 flex-col mt-5">
-  <iframe class="rounded-lg h-[340px]" style="width: 400px;" src="https://www.youtube.com/embed/qig4KOK2R2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe class="rounded-lg h-[340px]" style="width: 400px;" src="https://www.youtube.com/embed/lFXpmYK6SEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe class="rounded-lg h-[340px]" style="width: 400px;" src="https://www.youtube.com/embed/CEynaRataMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe class="rounded-lg h-[333px] w-full" src="https://www.youtube.com/embed/qig4KOK2R2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe class="rounded-lg h-[333px] w-full" src="https://www.youtube.com/embed/lFXpmYK6SEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe class="rounded-lg h-[333px] w-full" src="https://www.youtube.com/embed/CEynaRataMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

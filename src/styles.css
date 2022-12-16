@@ -25,3 +25,7 @@ button.p-ripple.p-element.p-carousel-next.p-link{
     border-color: transparent;
     background: #F97316 !important;
 }
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background: #2f5ef8 !important;
+    color: #312E81;
+}
