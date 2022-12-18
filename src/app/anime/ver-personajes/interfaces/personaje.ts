@@ -3,4 +3,5 @@ export default interface Personaje {
     anime?: string;
     descripcion?: string;
     imagen?: string;
+    gif: any;
 }

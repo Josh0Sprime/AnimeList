@@ -1,10 +1,21 @@
-<div class="transition-all flex flex-row justify-center space-x-16 bg-white p-10 h-full rounded-lg">
-    <img [style]="displayContenido" [class]="sizesImagen" src="{{personaje[0].imagen}}" alt="">
-    <div [style]="displayContenido" class="text-black w-[50%] text-center">
-        <div class="flex flex-col items-center space-y-28 mt-32">
-            <h1 class="text-6xl font-semibold">{{personaje[0].anime}}</h1>
-            <div class="text-left rounded-lg bg-orange-500 p-5 text-white font-semibold text-xl">
-                <p>{{personaje[0].descripcion}}</p>
+    
+<div [class]="displayContenido">
+    <div class="bg-white p-5 rounded-lg flex">
+        <img [src]="personaje[0].imagen" class="w-[500px]" alt="">
+    </div>
+    <div class="flex flex-col text-black text-center space-y-5 h-full">
+        <div class="bg-white p-10 rounded-lg h-full">
+            <h1 class="text-6xl font-semibold mb-16">{{personaje[0].anime}}</h1>
+            <div class="bg-orange-500 text-white p-10 rounded-lg">
+                <p class="font-semibold">{{personaje[0].descripcion}}</p>
+            </div>
+        </div>
+        <div class="bg-white p-10 rounded-lg grid grid-cols-1 gap-x-1 h-full">
+            <div>
+                <img class="h-36 w-full rounded-lg" [src]="personaje[0].gif[0]" alt="">
+            </div>
+            <div>
+                <img class="h-36 w-full rounded-lg" [src]="personaje[0].gif[1]" alt="">
             </div>
         </div>
     </div>
